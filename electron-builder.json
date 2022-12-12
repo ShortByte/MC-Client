@@ -16,7 +16,17 @@
       "filter": ["**/*"]
     }
   ],
+  "publish": [
+    {
+      "provider": "github",
+      "owner": "ShortByte",
+      "repo": "MC-Client"
+    }
+  ],
   "win": {
+    "publish": [
+      "github"
+    ],
     "target": [
       "nsis"
     ],

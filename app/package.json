@@ -1,6 +1,6 @@
 {
   "name": "mc-client",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Minecraft bot client made with mineflayer and electron.",
   "author": {
     "name": "Leon Enneken",

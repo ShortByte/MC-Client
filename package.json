@@ -1,9 +1,12 @@
 {
   "name": "mc-client",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Minecraft bot client made with mineflayer and electron.",
   "homepage": "https://github.com/ShortByte/MC-Client",
-  "repository": "git@github.com:ShortByte/MC-Client.git",
+  "repository": {
+    "type": "github",
+    "url": "git@github.com:ShortByte/MC-Client.git"
+  },
   "author": {
     "name": "Leon Enneken",
     "email": "contact@enneken-solutions.de"
