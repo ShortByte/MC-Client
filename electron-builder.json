@@ -1,5 +1,5 @@
 {
-  "appId": "mc-client",
+  "appId": "de.enneken-solutions.mc-client",
   "productName": "MC-Client",
   "asar": true,
   "directories": {
