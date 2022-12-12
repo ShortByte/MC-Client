@@ -1,0 +1,17 @@
+{
+  "name": "mc-client",
+  "version": "0.0.1",
+  "description": "Minecraft bot client made with mineflayer and electron.",
+  "author": {
+    "name": "Leon Enneken",
+    "email": "contact@enneken-solutions.de"
+  },
+  "main": "main.js",
+  "private": true,
+  "dependencies": {
+    "mineflayer": "github:ShortByte/mineflayer",
+    "portfinder": "^1.0.32",
+    "sqlite3": "5.1.2",
+    "prismarine-viewer": "github:ShortByte/prismarine-viewer"
+  }
+}

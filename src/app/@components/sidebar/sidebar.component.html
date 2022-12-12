@@ -1,0 +1,22 @@
+<div class="sidebar">
+  <div class="accounts" *ngIf="accounts">
+    <div class="account" *ngFor="let account of accounts">
+      <div class="link" [routerLink]="['/account/' + account.id]" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active">
+        <ng-container *ngIf="!(account.uuid) || account.uuid.length === 0">
+          <img src="https://minotar.net/helm/MHF_Question/48.png" />
+        </ng-container>
+        <ng-container *ngIf="account.uuid && account.uuid.length !== 0">
+          <img src="https://minotar.net/helm/{{account.uuid}}/48.png" />
+        </ng-container>
+        <span>{{account.displayName}}</span>
+      </div>
+      <a class="delete" (click)="deleteAccount(account)">
+        <i class="fa-regular fa-trash-can"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>{{version}}</span>
+  </div>
+</div>

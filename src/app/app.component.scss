@@ -1,0 +1,15 @@
+:host {
+  
+}
+
+.wrapper {
+  display: flex;
+  height: calc(100% - 68px);
+  overflow: hidden;
+
+  .content {
+    width: calc(100% - 300px);
+    padding: 2rem;
+    overflow-y: scroll;
+  }
+}

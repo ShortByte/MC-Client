@@ -1,0 +1,223 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+:root {
+  --COLOR_BACKGROUND: rgb(47, 52, 58);
+  --COLOR_BORDER: rgb(29, 32, 36);
+  --COLOR_PRIMARY: rgb(33, 37, 41);
+  --COLOR_LIGHT_GRAY: rgb(155, 155, 155);
+  --COLOR_WHITE: rgb(255, 255, 255);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  color: var(--COLOR_WHITE);
+}
+
+body {
+  background-color: var(--COLOR_BACKGROUND);
+}
+
+.card {
+  background-color: var(--COLOR_PRIMARY);
+}
+
+.form-label {
+  margin-left: 4px;
+  margin-bottom: 0px;
+}
+
+.form-control {
+  color: var(--COLOR_WHITE);
+  background-color: var(--COLOR_BACKGROUND);
+  border: 1px solid var(--COLOR_BORDER);
+  border-radius: 0rem;
+}
+
+.form-control:focus {
+  color: var(--COLOR_WHITE);
+  background-color: var(--COLOR_BACKGROUND);
+  border: 1px solid var(--COLOR_BORDER);
+  outline: 0;
+  box-shadow: unset;
+}
+
+.form-control:disabled {
+  background-color: var(--COLOR_BORDER);
+}
+
+
+.form-select {
+  color: var(--COLOR_WHITE);
+  background-color: var(--COLOR_BACKGROUND);
+  border: 1px solid var(--COLOR_BORDER);
+  border-radius: 0rem;
+}
+
+.form-select:focus {
+  border-color: var(--COLOR_BORDER);
+  outline: 0;
+  box-shadow: unset;
+}
+
+.form-select:disabled {
+  background-color: var(--COLOR_BORDER);
+}
+
+.btn {
+  border-radius: 0rem;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--COLOR_BACKGROUND);
+  --bs-btn-border-color: var(--COLOR_BACKGROUND);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: rgb(60, 67, 77);
+  --bs-btn-hover-border-color: rgb(58, 67, 78);
+  --bs-btn-focus-shadow-rgb: 49,132,253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: rgb(58, 67, 78);
+  --bs-btn-active-border-color: rgb(60, 67, 77);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--COLOR_BACKGROUND);
+  --bs-btn-disabled-border-color: var(--COLOR_BACKGROUND);
+}
+
+.bg-primary {
+  background-color: var(--COLOR_BACKGROUND) !important;
+}
+
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(72, 78, 85);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(47, 52, 58);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(40, 45, 51);
+}
+
+
+.console, .logs {
+  background-color: rgba(0, 0, 0, 0.15);
+  overflow-y: scroll;
+  margin-bottom: 0.5rem;
+
+  font-family: "Roboto Mono", monospace;
+
+  ul {
+    padding: 0px;
+    margin: 0px 4px;
+
+    li {
+      list-style-type: none;
+      font-size: 14px;
+    }
+  }
+}
+
+
+
+.info,
+.warn,
+.error {
+  padding: 0px 2px;
+  font-weight: 600;
+}
+
+.info {
+  background-color: #00ffff;
+  color: black;
+}
+.warn {
+  background-color: #ffe600;
+  color: black;
+}
+.error {
+  background-color: #ff0000;
+  color: black;
+}
+
+.text-black,
+.text-white,
+.text-reset {
+  color: rgb(255, 255, 255);
+}
+.text-dark_blue {
+  color: rgb(0, 0, 170);
+}
+.text-dark_green {
+  color: rgb(0, 170, 0);
+}
+.text-dark_aqua {
+  color: rgb(0, 170, 170);
+}
+.text-dark_red {
+  color: rgb(170, 0, 0);
+}
+.text-dark_purple {
+  color: rgb(170, 0, 170);
+}
+.text-gold {
+  color: rgb(255, 170, 0);
+}
+.text-gray {
+  color: rgb(170, 170, 170);
+}
+.text-dark_gray {
+  color: rgb(85, 85, 85);
+}
+.text-blue {
+  color: rgb(85, 85, 255);
+}
+.text-green {
+  color: rgb(85, 255, 85);
+}
+.text-aqua {
+  color: rgb(85, 255, 255);
+}
+.text-red {
+  color: rgb(255, 85, 85);
+}
+.text-light_purple {
+  color: rgb(255, 85, 255);
+}
+.text-yellow {
+  color: rgb(255, 255, 85);
+}
+.text-bold {
+  font-weight: bold;
+}
+.text-strikethrough {
+  text-decoration: line-through;
+}
+.text-underlined {
+  text-decoration: underline;
+}
+.text-italic {
+  font-style: italic;
+}

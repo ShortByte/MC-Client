@@ -1,0 +1,57 @@
+:host {
+}
+
+.header {
+  padding: 0.5rem 0rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px var(--COLOR_BORDER) solid !important;
+
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+
+  h3 {
+    margin: 0;
+
+    small {
+      opacity: 0.5;
+      font-size: 65%;
+    }
+  }
+
+  .badge {
+    font-size: 1rem !important;
+    padding: 8px 16px !important;
+  }
+}
+
+.card-headers {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 0rem 0.5rem 0rem;
+
+  h5 {
+    margin: 0rem !important;
+  }
+}
+
+.console,
+.logs {
+  max-height: 440px;
+  height: 440px;
+}
+
+.nav {
+  --bs-nav-link-color: var(--COLOR_LIGHT_GRAY);
+  --bs-nav-link-hover-color: var(--COLOR_WHITE);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: var(--COLOR_BACKGROUND);
+}

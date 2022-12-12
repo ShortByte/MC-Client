@@ -1,0 +1,74 @@
+<div class="container">
+  <h3 class="title">
+    Accounts
+  </h3>
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title mb-3">
+            Account anlegen
+          </h5>
+          <form class="row" [formGroup]="form">
+            <div class="col-sm-12 col-md-6">
+              <div class="mb-3">
+                <label class="form-label">Display Name:</label>
+                <input type="text" class="form-control" [formControlName]="'displayName'">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Username:</label>
+                <input type="text" class="form-control" [formControlName]="'username'">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Password:</label>
+                <input type="password" class="form-control" [formControlName]="'password'">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Type:</label>
+                <select class="form-select" [formControlName]="'type'">
+                  <option *ngFor="let type of types" [value]="type.value">
+                    {{type.label}}
+                  </option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6">
+              <div class="mb-3">
+                <label class="form-label">Server Hostname:</label>
+                <input type="text" class="form-control" [formControlName]="'hostname'">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Server Port:</label>
+                <input type="number" class="form-control" [formControlName]="'port'">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Version:</label>
+                <select class="form-select" [formControlName]="'version'">
+                  <option *ngFor="let version of versions" [value]="version">
+                    {{version}}
+                  </option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary" (click)="addAccount()">
+                Add Account
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
+<div class="container">
+  <h1 class="title">
+    {{ 'PAGES.HOME.TITLE' | translate }}
+  </h1>
+
+  <a routerLink="/detail">{{ 'PAGES.HOME.GO_TO_DETAIL' | translate }}</a>
+</div>-->

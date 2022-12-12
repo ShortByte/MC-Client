@@ -1,0 +1,45 @@
+{
+  "appId": "mc-client",
+  "productName": "MC-Client",
+  "asar": true,
+  "directories": {
+    "output": "release/"
+  },
+  "files": [
+    "**/*",
+    "!**/*.ts",
+    "!*.map",
+    "!package.json",
+    "!package-lock.json",
+    {
+      "from": "../dist",
+      "filter": ["**/*"]
+    }
+  ],
+  "win": {
+    "target": [
+      "nsis"
+    ],
+    "icon": "dist/assets/icons/favicon.ico"
+  },
+  "nsis": {
+    "installerIcon": "dist/assets/icons/favicon.ico",
+    "uninstallerIcon": "dist/assets/icons/favicon.ico",
+    "uninstallDisplayName": "MC-Client",
+    "license": "license.txt",
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true
+  },
+  "mac": {
+    "icon": "dist/assets/icons",
+    "target": [
+      "dmg"
+    ]
+  },
+  "linux": {
+    "icon": "dist/assets/icons",
+    "target": [
+      "AppImage"
+    ]
+  }
+}

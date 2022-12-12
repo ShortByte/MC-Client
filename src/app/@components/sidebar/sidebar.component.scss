@@ -1,0 +1,66 @@
+.sidebar {
+  position: relative;
+  height: 100%;
+  width: 300px;
+  background-color: var(--COLOR_PRIMARY);
+
+  border-right: 4px solid var(--COLOR_BORDER);
+
+  .footer {
+    width: 100%;
+    position: absolute;
+    bottom: .5rem;
+    text-align: center;
+    opacity: 0.25;
+  }
+}
+
+.accounts {
+  padding-top: 8px;
+
+  .account {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: transform .25s;
+    background-color: var(--COLOR_BACKGROUND);
+
+    margin: 16px 8px;
+    padding: 8px;
+
+    .link {
+      width: 100%;
+      color: var(--COLOR_WHITE);
+      text-decoration: unset;
+      cursor: pointer;
+
+      img {
+        margin-right: 8px;
+      }
+    }
+  
+    .delete {
+      margin: 0px 12px;
+
+      color: var(--COLOR_BORDER);
+      font-size: 24px;
+      transition: ease-in-out .25s color;
+    }
+
+    .delete:hover {
+      color: rgb(248, 78, 78);
+    }
+  }
+
+  .account:hover {
+    transform: scale(1.025);
+  }
+
+  .account:has(.link.active) {
+    box-shadow: inset 0px 0px 0px 4px var(--COLOR_BORDER);
+    //border: 4px var(--COLOR_BORDER) solid;
+  }
+}
